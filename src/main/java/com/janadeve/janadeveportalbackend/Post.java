@@ -1,20 +1,17 @@
 package com.janadeve.janadeveportalbackend;
 
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
-
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.Date;
 
 @Entity
+@Table(name = "posts", schema = "public")
 public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String titulo;
     private String descricao;
-    @Column(length = 16777216)
+    @Column(length = 167772)
     private String texto;
     private LocalDate datapubicacao;
     private boolean ativo;
