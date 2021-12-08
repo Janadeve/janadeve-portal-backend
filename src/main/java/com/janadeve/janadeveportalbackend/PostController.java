@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
 import java.util.Optional;
 import java.util.logging.Logger;
 
@@ -35,5 +36,17 @@ public class PostController {
         }catch(RuntimeException e){
             return ResponseEntity.notFound().build();
         }
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<?> atualizar(@RequestBody Post newPost, @PathVariable Long id){
+        Post postSalvo = postService.atualizar(newPost, id);
+        return ResponseEntity.ok().body(postSalvo);
+    }
+
+    @PatchMapping("/{id}")
+    public ResponseEntity<?> atualizarParcial(@RequestBody Map<String, Object> newPost, @PathVariable Long id){
+        Post postSalvo = postService.atualizarParcial(newPost, id);
+        return ResponseEntity.ok().body(postSalvo);
     }
 }
