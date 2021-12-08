@@ -1,0 +1,219 @@
+.bio {
+    font-size: 1.25rem;
+}
+
+.bio-container {
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 90vw;
+}
+
+/* BIO LENGTH */
+.bio-length-control {
+    margin: 1rem auto 3rem;
+    max-width: 90vw;
+    width: 300px;
+}
+
+.bio-fieldset {
+    border: none;
+    padding: 0;
+}
+
+.bio-label {
+    cursor: pointer;
+    font-size: .75rem;
+}
+
+.bio-legend {
+    color: var(--text-muted);
+    font-size: .75rem;
+    font-variant: small-caps;
+    font-weight: 400;
+    letter-spacing: .15em;
+    margin: 0;
+    padding: 0;
+    text-transform: lowercase;
+}
+
+.bio-length-options {
+    align-items: center;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(6,1fr);
+}
+
+.bio-option {
+    cursor: pointer !important; 
+    height: calc(50px - 0.66667rem);
+    position: relative;
+}
+
+.bio-input {
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+:checked+.bio-label:before, :focus+.bio-label:before, :hover+.bio-label:before {
+    border-color: var(--text-pink);
+}
+
+:checked+.bio-label:after{
+	background-color: rgb(255, 135, 212);	
+}
+
+.bio-label:before {
+    border: 1px solid var(--pink);
+    transition: background .2s linear;
+    z-index: 10;
+}
+
+.bio-label:after, .bio-label:before {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 0;
+    left: 50%;
+    padding-bottom: calc(1rem - 2px);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 1rem;
+}
+
+.bio-option:first-of-type .bio-label-text {
+    left: 0;
+    text-align: left;
+}
+.bio-option:first-of-type .bio-label-text, .bio-option:last-of-type .bio-label-text {
+    clip: auto;
+    height: auto;
+    overflow: visible;
+    width: 60px;
+}
+
+.bio-label-text {
+    clip: rect(1px,1px,1px,1px);
+    color: var(--text-muted);
+    font-weight: 400;
+    height: 1px;
+    letter-spacing: .2em;
+    overflow: hidden;
+    position: absolute;
+    top: 80%;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* BIO SOCIAL */
+.bio-social {
+    margin-top: 3rem;
+}
+
+.bio-connect {
+    color: var(--text-muted);
+    font-size: .75rem;
+    font-weight: 400;
+    letter-spacing: .2em;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bio-profiles {
+    align-content: center;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3,60px);
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bio-link {
+    background: var(--text-pink);
+    border-radius: 50%;
+    display: block;
+    height: 60px;
+    padding: 1.125rem;
+    transition: all .2s linear;
+    transition-delay: .15s;
+}
+
+.bio-link:focus, .bio-link:hover {
+    background: var(--text);
+    outline: none;
+    transition-delay: 0ms;
+}
+
+/* BIO IMAGE*/
+.bio-image-container {
+    margin: 0 0 4rem;
+    padding: 0;
+}
+
+.gallery-image {
+    margin: 3rem auto;
+    max-width: 90vw;
+    padding: 0;
+    width: 400px;
+}
+
+.gallery-image>div {
+    height: 0!important;
+    max-width: 100%!important;
+    padding-bottom: 100%!important;
+}
+
+.gallery-image figcaption {
+    color: var(--text-muted);
+    margin: 1rem 0 0;
+}
+
+.gallery-options {
+    margin-bottom: 0;
+}
+
+.gallery-heading {
+    color: var(--text-muted);
+    font-size: .625rem;
+    font-weight: 400;
+    letter-spacing: .2em;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.gallery-thumbnails {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit,50px);
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.galeria-thumb {
+    opacity: 1;
+    transition: opacity .2s linear;
+}
+
+.gallery-thumb-link {
+    background: none;
+    border: none;
+    display: block;
+    height: 50px;
+}
+
+.gallery-thumb-link:focus, .gallery-thumb-link:hover {
+    outline: 2px solid var(--text-pink);
+    outline-offset: 0.25rem;
+}

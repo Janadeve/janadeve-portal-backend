@@ -1,0 +1,102 @@
+@font-face {
+    font-family: jwf;
+    src: url(/fonts/jwf-book.woff) format("woff"), url(/fonts/jwf-book.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: jwf;
+    src: url(../fonts/jwf-bookitalic.woff) format("woff"), url(../fonts/jwf-bookitalic.woff) format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: jwf;
+    src: url(../fonts/jwf-bold.woff) format("woff"), url(../fonts/jwf-bold.woff) format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: jwf;
+    src: url(../fonts/jwf-bolditalic.woff) format("woff"), url(../fonts/jwf-bolditalic.woff) format("woff");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: jwfultra;
+    src: url(../fonts/jwf-ultra.woff) format("woff"), url(../fonts/jwf-ultra.woff) format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: jwf;
+    src: url(../fonts/jwf-ultraitalic.woff) format("woff"), url(../fonts/jwf-ultraitalic.woff) format("woff");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+:root {
+    --white: #fff;
+    --text: #403c4a;
+    --text-emphasized: #201d29;
+    --text-muted: #78757f;
+    --text-pink: #c10b7e;
+    --yellow: #ffe742;
+    --yellow-dark: #ddc62c;
+    --pink: #ff87d4;
+    --pink-faded: #f5f2fc;
+    --pink-dark: #970962;
+    --blue: #87fffb;
+    --blue-dark: #63ddd9;
+    --black: #171321;
+    --gray-light: #d4d0e0;
+    --gray-medium: #b1acb9;
+    --font-family2: 'Archivo Black', sans-serif;
+    --font-family: jwfultra, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+    --background: var(--white);
+    --foreground: var(--black);
+    --footnote-hover: var(--pink-dark);
+}
+
+html{
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--text-pink);
+    font-weight: 400;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.block {
+    background: var(--background);
+    border-bottom: 1px solid var(--gray-light);
+    padding: 2rem 3vw;
+    transition: background .2s linear;
+    position: relative;
+}
+
+.block.yellow {
+    background: var(--yellow);
+    border-color: var(--yellow-dark);
+}
+
+@media (min-width: 1200px){
+    .h3, h3 {
+        font-size: 1.2rem;
+    }
+}
+

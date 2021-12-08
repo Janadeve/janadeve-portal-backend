@@ -1,0 +1,78 @@
+#hero-painel{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 5rem 5vw;
+    top: 0px;
+    background: var(--yellow);
+    border-color: var(--yellow-dark);
+    font-size: calc(1.00rem + 1vw);
+}
+
+#hero-painel h1{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    font-size: 2em;
+    max-height: 54vw;
+    max-width: 45vw;
+    width: 90vw;
+    top: 12vh;
+}
+
+#hero-painel .first-line{
+    display: block;
+    position: relative;
+    font-size: 15vw;
+    line-height: 13vw;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--font-family);
+    color: var(--black);
+}
+
+#hero-painel .hero-box{
+    display: block;
+    position: relative;
+    font-size: 8vw;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--font-family);
+    color: var(--yellow);
+    background-color: var(--black);
+    top: -0.2rem;
+}
+
+
+#hero-painel .tagline{
+    display: block;
+    position: relative;
+    font-size: 3.1vw;
+    line-height: 3.1vw;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--font-family);
+    color: var(--black);
+    top: 1rem;
+}
+
+#hero-painel .tagline .love{
+    background: url("../img/love.png");
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    color: transparent;
+    display: inline-block;
+    height: 1.2em;
+    margin: -0.1em -3px;
+    position: relative;
+    top: var(--top,-.05em);
+    transform: scale(var(--scale,1.2)) rotate(var(--rotation,-11deg)) translateY(0.1em);
+    transform-origin: center;
+    width: 1.6em;
+    transition-property: transform;
+    transition-duration: 1s;
+    cursor: pointer;
+}

@@ -1,0 +1,115 @@
+.block.blue {
+    background: var(--blue);
+    border-color: var(--blue-dark);
+}
+
+.intro {
+    margin: 0 auto 3rem;
+    max-width: 90vw;
+    width: 900px;
+}
+
+@media (min-width: 950px){
+	.intro-headline {
+	    font-size: 4.125rem;
+	}
+}
+
+@media (min-width: 600px){
+	.intro-headline {
+	    font-size: 7vw;
+	}
+}
+
+.intro-headline {
+    font-size: 4.5vw;
+    margin: 0;
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+.intro-lede, .intro-lede p {
+    margin: 1rem 0 0;
+}
+.intro-lede {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.teaching-container {
+    margin: 0 auto 3rem;
+    max-width: 1400px;
+    width: 90vw;
+}
+
+@media (min-width: 800px){
+	.teaching-container {
+	    display: grid;
+	    gap: 2rem;
+	    grid-template-columns: repeat(3,1fr);
+	}
+}
+
+@media (min-width: 800px){
+	.platform {
+	    margin-top: 0;
+	}
+}
+
+.platform {
+    margin-top: 2rem;
+}
+
+.platform-logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 220px;
+}
+
+@media (min-width: 1000px){
+	.platform-card {
+	    padding-bottom: 2rem;
+	    padding-left: 2.5rem;
+	    padding-right: 2.5rem;
+	}
+}
+
+@media (min-width: 800px){
+	.platform-card {
+	    padding-bottom: 1.5rem;
+	    padding-left: 1.5rem;
+	    padding-right: 1.5rem;
+	}
+}
+.platform-card {
+    background: var(--background);
+    border: 1px solid var(--blue-dark);
+    border-radius: 14px;
+    margin-top: -8rem;
+    padding: 8rem 2rem 2rem;
+}
+
+.platform-name {
+    color: var(--foreground);
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.platform-name a {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+}
+
+.platform-description {
+    color: var(--text-muted);
+    margin: 2rem 0;
+}
+
+.platform-link {
+    font-size: .75rem;
+    letter-spacing: .2em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
