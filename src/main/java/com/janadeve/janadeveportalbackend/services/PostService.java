@@ -1,6 +1,8 @@
-package com.janadeve.janadeveportalbackend;
+package com.janadeve.janadeveportalbackend.services;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.janadeve.janadeveportalbackend.entities.Post;
+import com.janadeve.janadeveportalbackend.repositories.PostRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

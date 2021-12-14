@@ -1,12 +1,13 @@
-package com.janadeve.janadeveportalbackend;
+package com.janadeve.janadeveportalbackend.controllers;
 
+import com.janadeve.janadeveportalbackend.entities.Post;
+import com.janadeve.janadeveportalbackend.services.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 import java.util.Optional;
-import java.util.logging.Logger;
 
 @RestController
 @RequestMapping("/posts")

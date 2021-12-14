@@ -1,4 +1,4 @@
-package com.janadeve.janadeveportalbackend;
+package com.janadeve.janadeveportalbackend.entities;
 
 import javax.persistence.*;
 import java.time.LocalDate;
